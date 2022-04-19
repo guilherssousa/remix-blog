@@ -7,19 +7,25 @@ import { json } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
 
 export const loader = async () => {
-  const request = await fetch(
-    `https://www.googleapis.com/blogger/v3/blogs/7057463913343102362/posts?` +
-      new URLSearchParams({
-        key: process.env.BLOGGER_API_KEY,
-      }),
-    {
-      method: "GET",
-    }
-  );
+  try {
+    const request = await fetch(
+      `https://www.googleapis.com/blogger/v3/blogs/7057463913343102362/posts?` +
+        new URLSearchParams({
+          key: process.env.BLOGGER_API_KEY,
+        }),
+      {
+        method: "GET",
+      }
+    );
 
-  const response = await request.json();
+    const response = await request.json();
 
-  return json(response.items);
+    return json(response.items);
+  } catch (e) {
+    console.error(e);
+
+    return json([]);
+  }
 };
 
 export default function Index() {
