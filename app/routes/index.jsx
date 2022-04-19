@@ -7,7 +7,7 @@ export default function Index() {
   return (
     <Layout>
       <Header />
-      <div className="md:flex pt-10 items-center justify-between">
+      <div className="md:flex pt-10 justify-around">
         <aside className="md:max-w-sm flex items-center justify-center md:flex-col px-6">
           <img
             className="w-24 h-24 md:h-36 md:w-36 rounded-full"
@@ -16,7 +16,7 @@ export default function Index() {
             alt="Hi, it's me"
             src="https://github.com/guilherssousa.png"
           />
-          <div className="ml-4 md:ml-0 md:text-center">
+          <div className="md:ml-0 md:text-center">
             <h2 className="text-2xl font-bold mt-4">Guilherme Sousa</h2>
             <p className="mt-2 text-gray-300 md:text-left">
               Software developer based in Brazil, currently working as a
