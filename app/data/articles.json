@@ -1,0 +1,17 @@
+[
+  {
+    "slug": "why-using-ui-focused-websites-as-a-front-end-beginner-is-a-mistake",
+    "title": "Why using UI-focused websites as a front-end beginner is a mistake?",
+    "description": "I will help you to understand what is the design you see in websites like Behance and Dribbble."
+  },
+  {
+    "slug": "how-computers-generate-random-values",
+    "title": "How computers generate random values",
+    "description": "Since computers are machines with no external conceptions of time and randomness, how computers can generate and understand the idea of random numbers?"
+  },
+  {
+    "slug": "dealing-with-math-as-a-bad-student",
+    "title": "Dealing with math as a bad student",
+    "description": "If you are a software developer, you might have been asked (or even asked by yourself) if math knowledge was needed to be good at programming."
+  }
+]
