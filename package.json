@@ -1,8 +1,8 @@
 {
-  "name": "remix-template-netlify",
+  "name": "remix-blog",
   "private": true,
-  "description": "",
-  "license": "",
+  "description": "A development journal made with Remix.",
+  "license": "MIT",
   "sideEffects": false,
   "scripts": {
     "build": "remix build",
