@@ -16,8 +16,8 @@ export default function Index() {
         <AboutMe />
         <main className="md:w-full mt-8 md:mt-0 md:max-w-3xl px-6">
           <div>
-            {articles.map((article) => (
-              <ArticleLink article={article} key={article.slug} />
+            {articles.map((article, index) => (
+              <ArticleLink article={article} key={index} />
             ))}
           </div>
         </main>

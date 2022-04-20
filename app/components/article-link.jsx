@@ -22,6 +22,16 @@ export default function ArticleLink({ article }) {
         <p className="mt-4 dark:text-gray-300 text-gray-700 dark:group-hover:text-gray-100">
           {article.description}
         </p>
+        <div className="mt-2">
+          {article.tags.map((tag) => (
+            <span
+              key={tag}
+              className="mr-2 bg-gray-700 font-bold py-1 px-2 text-xs rounded-sm"
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
       </a>
     </article>
   );
