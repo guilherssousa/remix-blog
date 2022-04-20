@@ -15,7 +15,7 @@ export default function Layout({ children }) {
 
   return (
     <div className={isDarkTheme && "dark"}>
-      <div className="text-gray-900 bg-white dark:bg-zinc-900 dark:text-gray-200 min-h-screen antialiased">
+      <div className="text-gray-900 bg-white dark:bg-zinc-900 dark:text-gray-200 min-h-screen antialiased transition-colors ease-in-out">
         <div className="max-w-screen-xl mx-auto md:px-8">
           <Header
             toggleTheme={toggleTheme}
