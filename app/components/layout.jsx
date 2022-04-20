@@ -5,11 +5,12 @@ export default function Layout({ children }) {
   const [isDarkTheme, toggleTheme] = useState(true);
 
   useEffect(() => {
-    const isDarkMode = localStorage.getItem("@krteazy:theme") === "dark";
+    var isDarkMode = localStorage.getItem("@krteazy:theme") === "dark";
     if (!localStorage.getItem("@krteazy:theme")) {
       localStorage.setItem("@krteazy:theme", "dark");
+      isDarkMode = true;
     }
-    toggleTheme(!!isDarkMode);
+    toggleTheme(isDarkMode);
   }, []);
 
   return (
