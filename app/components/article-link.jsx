@@ -26,7 +26,7 @@ export default function ArticleLink({ article }) {
           {article.tags.map((tag) => (
             <span
               key={tag}
-              className="mr-2 bg-gray-700 font-bold py-1 px-2 text-xs rounded-sm"
+              className="mr-2 bg-gray-700 text-white font-bold py-1 px-2 text-xs rounded-sm"
             >
               {tag}
             </span>
