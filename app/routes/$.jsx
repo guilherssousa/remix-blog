@@ -18,10 +18,17 @@ export default function ArticlePage() {
         <main className="md:w-full mt-8 md:mt-0 md:max-w-3xl px-6">
           <h2 className="text-3xl font-bold">{article.title}</h2>
 
+          <div>{article.description}</div>
+
           <div className="mt-4 text-gray-700 dark:text-gray-300">
             publicado em {new Date(article.updatedAt).toLocaleString("pt-BR")}{" "}
             {article.tags.split(",").map((tag) => (
-              <span>{tag.trim()}</span>
+              <span
+                key={tag}
+                className="mr-2 bg-gray-700 text-white dark:text-white font-bold py-1 px-2 text-xs rounded-sm"
+              >
+                {tag.trim()}
+              </span>
             ))}
           </div>
 
