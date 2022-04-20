@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <div className="mt-8 h-20 flex items-center justify-between text-gray-700 dark:text-gray-400">
+    <div className="mx-8 mt-8 h-20 flex items-center justify-between text-gray-700 dark:text-gray-400">
       <span
         onClick={() => {
           window.scrollTo({

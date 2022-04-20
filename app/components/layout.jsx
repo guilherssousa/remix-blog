@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Header from "./header";
+import Footer from "./footer";
 
 export default function Layout({ children }) {
   const [isDarkTheme, toggleTheme] = useState(true);
@@ -22,6 +23,7 @@ export default function Layout({ children }) {
             themeName={isDarkTheme ? "dark" : "light"}
           />
           {children}
+          <Footer />
         </div>
       </div>
     </div>
