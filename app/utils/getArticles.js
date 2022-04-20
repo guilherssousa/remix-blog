@@ -20,8 +20,9 @@ export default async function () {
         const { data, content: parsedContent } = matter(content);
 
         // regex only letters and hyphen
-        const regex = /[a-zA-Z0-9-]*\.html/g;
-        const slug = url.match(regex)[0].split(".")[0];
+        const slug = url
+          .replace("http://krteazydevjournal.blogspot.com/", "")
+          .replace(".html", "");
 
         return {
           title: title,
