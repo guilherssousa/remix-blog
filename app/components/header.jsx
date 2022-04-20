@@ -1,3 +1,5 @@
+import Link from "@remix-run/react";
+
 export default function Header({ themeName, toggleTheme }) {
   const toggleThemeHandler = () => {
     if (themeName === "light") {
@@ -12,16 +14,31 @@ export default function Header({ themeName, toggleTheme }) {
   return (
     <header className="mx-8 flex items-center justify-between pt-6 md:pt-12">
       <div className="md:w-4/6">
-        <h1 className="font-bold text-xl md:text-3xl">
-          krteazy's development journal
-        </h1>
+        <Link to="/">
+          <h1 className="font-bold text-xl md:text-3xl">
+            krteazy's development journal
+          </h1>
+        </Link>
       </div>
       <div className="md:w-2/6 flex items-center justify-end font-bold gap-x-4 cursor-pointer">
-        <a className="hidden md:inline-block">Twitter</a>
-        <a className="hidden md:inline-block">Github</a>
-        <a className="hidden md:inline-block">Linkedin</a>
+        <a
+          href="https://github.com/guilherssousa"
+          target="_blank"
+          ref="noreferrer"
+          className="hidden md:inline-block"
+        >
+          Github
+        </a>
+        <a
+          href="https://linkedin.com/in/guilhermedasilvasousa/"
+          target="_blank"
+          ref="noreferrer"
+          className="hidden md:inline-block"
+        >
+          Linkedin
+        </a>
 
-        <button onClick={toggleThemeHandler}>
+        <button onClick={toggleThemeHandler} aria-label="Change color theme">
           {themeName === "light" ? (
             <svg
               xmlns="http://www.w3.org/2000/svg"
