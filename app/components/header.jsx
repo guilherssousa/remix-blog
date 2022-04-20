@@ -24,7 +24,7 @@ export default function Header({ themeName, toggleTheme }) {
         <a
           href="https://github.com/guilherssousa"
           target="_blank"
-          ref="noreferrer"
+          rel="noreferrer"
           className="hidden md:inline-block"
         >
           Github
@@ -32,7 +32,7 @@ export default function Header({ themeName, toggleTheme }) {
         <a
           href="https://linkedin.com/in/guilhermedasilvasousa/"
           target="_blank"
-          ref="noreferrer"
+          rel="noreferrer"
           className="hidden md:inline-block"
         >
           Linkedin
