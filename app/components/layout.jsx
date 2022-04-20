@@ -6,6 +6,9 @@ export default function Layout({ children }) {
 
   useEffect(() => {
     const isDarkMode = localStorage.getItem("@krteazy:theme") === "dark";
+    if (!localStorage.getItem("@krteazy:theme")) {
+      localStorage.setItem("@krteazy:theme", "dark");
+    }
     toggleTheme(!!isDarkMode);
   }, []);
 

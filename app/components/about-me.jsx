@@ -10,7 +10,7 @@ export default function AboutMe() {
       />
       <div className="ml-4 mr-2 md:ml-0 md:text-center">
         <h2 className="text-2xl font-bold mt-4">Guilherme Sousa</h2>
-        <p className="mt-2 text-gray-700 dark:text-gray-300 md:text-left">
+        <p className="mt-2 text-gray-700 dark:text-gray-300 text-justify">
           Software developer based in Brazil, currently working as a front-end
           developer at Mais Esports.
         </p>

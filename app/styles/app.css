@@ -585,6 +585,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 2.5rem;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -679,6 +683,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:w-2\/6 {
     width: 33.333333%;
+  }
+
+  .md\:w-full {
+    width: 100%;
   }
 
   .md\:max-w-sm {
