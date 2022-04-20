@@ -17,7 +17,7 @@ export default function ArticlePage() {
         <AboutMe />
         <main className="md:w-full mt-8 md:mt-0 md:max-w-3xl px-6">
           <div className="max-w-prose mx-auto">
-            <h2 className="text-xl md:text-3xl font-bold">{article.title}</h2>
+            <h2 className="text-2xl md:text-3xl font-bold">{article.title}</h2>
 
             <div className="text-md md:text-xl mt-2">{article.description}</div>
 
