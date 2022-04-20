@@ -15,7 +15,7 @@ export default function ArticlePage() {
     <Layout>
       <div className="md:flex pt-10 justify-around">
         <AboutMe />
-        <main className="md:w-full mt-8 md:mt-0 md:max-w-3xl px-6">
+        <main className="md:w-full mt-8 md:mt-0 md:max-w-prose px-6">
           <h2 className="text-3xl font-bold">{article.title}</h2>
 
           <div className="text-xl mt-2">{article.description}</div>
