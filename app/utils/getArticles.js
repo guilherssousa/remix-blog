@@ -13,13 +13,6 @@ export default async function () {
       }
     );
 
-    console.log(
-      `https://www.googleapis.com/blogger/v3/blogs/${process.env.BLOGGER_BLOG_ID}/posts?` +
-        new URLSearchParams({
-          key: process.env.BLOGGER_API_KEY,
-        })
-    );
-
     const response = await request.json();
 
     const articles = response.items.map(
@@ -34,7 +27,7 @@ export default async function () {
           title: title,
           content: parsedContent,
           ...data,
-          tags: data.tags.split(",").map((tag) => tag.trim()),
+          tags: data?.tags?.split(",")?.map((tag) => tag.trim()) || [],
           slug: slug,
           published,
         };
