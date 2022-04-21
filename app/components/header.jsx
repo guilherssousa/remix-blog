@@ -15,7 +15,7 @@ export default function Header({ themeName, toggleTheme }) {
     <header className="mx-8 flex items-center justify-between pt-6 md:pt-12">
       <div className="md:w-4/6">
         <Link to="/">
-          <h1 className="font-bold text-xl md:text-3xl">
+          <h1 className="font-bold text-lg md:text-3xl">
             krteazy's development journal
           </h1>
         </Link>
@@ -42,7 +42,7 @@ export default function Header({ themeName, toggleTheme }) {
           {themeName === "light" ? (
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6"
+              class="h-8 w-8 md:h-6 md:w-6"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -57,7 +57,7 @@ export default function Header({ themeName, toggleTheme }) {
           ) : (
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
+              className="h-8 w-8 md:h-6 md:w-6"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
