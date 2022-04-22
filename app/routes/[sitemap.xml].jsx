@@ -6,7 +6,10 @@ export async function loader() {
   const data = await response.text();
 
   return new Response(
-    data.replaceAll(BASE_URL, "https://blog.guilherssousa.dev"),
+    data.replace(
+      /(https\:\/\/krteazydevjournal\.blogspot\.com)/g,
+      "https://blog.guilherssousa.dev"
+    ),
     {
       status: 200,
       headers: {
