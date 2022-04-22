@@ -8,6 +8,16 @@ import { useLoaderData } from "@remix-run/react";
 
 export const loader = async ({ params }) => getArticle(params["*"]);
 
+export const meta = ({ data }) => ({
+  title: `${data.title} por Guilherme Sousa`,
+  description: data.description,
+  "article:author": "Guilherme Sousa",
+  "article:published_time": data.updatedAt,
+  "og:title": `${data.title} por Guilherme Sousa`,
+  "og:description": data.description,
+  "og:type": "article",
+});
+
 export default function ArticlePage() {
   const article = useLoaderData();
 
