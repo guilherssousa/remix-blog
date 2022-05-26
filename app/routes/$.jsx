@@ -21,8 +21,11 @@ export const meta = ({ data }) => {
     "og:description": data.description,
     "og:type": "article",
     "og:image": coverImage,
-    "twitter:image": coverImage,
     "og:image:secure_url": coverImage,
+    "twitter:title": `"${data.title}" por Guilherme Sousa`,
+    "twitter:image": coverImage,
+    "twitter:url": `https://blog.guilherssousa.dev/${data.url}`,
+    "twitter:card": "summary_large_image",
   };
 };
 

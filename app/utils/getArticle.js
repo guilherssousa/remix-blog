@@ -19,6 +19,7 @@ export default async function getArticle(param) {
     const { data, content: parsedContent } = matter(response.content);
 
     const article = {
+      url: param,
       title: response.title,
       content: parsedContent,
       ...data,
